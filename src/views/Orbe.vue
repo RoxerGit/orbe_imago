@@ -20,11 +20,11 @@ const classObject = reactive({
 })
 
 onMounted(() => {
-	openModalDuplicate()
+	openModalVideo()
 })
 
 	
-async function openModalDuplicate() {
+async function openModalVideo() {
 	const modal = await openModal(Modal, { msg: "Close here only" });
 	modal.onclose = (event) => {
 		classObject['modal-container']=false		
