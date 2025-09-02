@@ -3,7 +3,7 @@
 <template>
 <!--	<div class="format header">-->
 		<el-header direction="horizontal" class="header">
-			<el-row :gutter="0" :align="middle" :justify="space-around">
+			<el-row :gutter="0">
 				<el-col  :xs="24" :md="10">
 						<img src="../../assets/1 Header/Recurso 2.png" class="image"/>
 				</el-col>
