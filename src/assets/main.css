@@ -28,8 +28,8 @@ a,
   body {
     display: flex;
     place-items: center;
-    background: gray;
-    background-image: url("1 Header/Recurso 2.png");
+    //background: gray;
+    //background-image: url("1 Header/Recurso 2.png");
     //background-repeat: no-repeat;
   }
 

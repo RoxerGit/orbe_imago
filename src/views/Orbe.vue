@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import CarruselAutomatico from './main/CarruselAutomatico.vue';
-import CarruselManual from './main/CarruselManual.vue';
+import Carrusel3d from './main/carrusel/carrusel_3d.vue';
 
 function x(){
 	alert("xyz")
@@ -37,12 +36,12 @@ async function openModalVideo() {
 <template>
 	
 	<el-main class="main">
-		<CarruselAutomatico/>
+		<Carrusel3d/>
 	</el-main>
 
 	  
 	<el-main>
-		<CarruselManual/>
+		<Carrusel3d/>
 	</el-main>
 	
 	<div class="seccion">
@@ -59,7 +58,7 @@ async function openModalVideo() {
 
 <style scoped>
 
-
+/*
 
 
 .modal-container {
@@ -79,7 +78,7 @@ async function openModalVideo() {
 }
 
 
-.main{
+.body{
 	padding-top:20px ;
 	padding-left: 0px;
 	padding-right: 0px;
@@ -92,6 +91,6 @@ async function openModalVideo() {
 	background-repeat: no-repeat;
 	height: 500px;
 }
-
+*/
 
 </style>
