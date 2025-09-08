@@ -23,7 +23,7 @@
 .header{
 	//background:  url("../../assets/Recurso3.png");
 	background-color: rgb(16, 24, 32);
-	height: 200px;
+	height: 110px;
 	align-content: space-around;
 }
 
