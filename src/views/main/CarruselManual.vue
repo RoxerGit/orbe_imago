@@ -21,7 +21,7 @@ const buttons = [
 {id:5,image:button5, link:'https://www.youtube.com/embed/vtKu6_-0qjs'},
 ];
 
-constant currentSlide = ref(0);
+const currentSlide = ref(0);
    
 function slideTo(val) {
 	currentSlide = val
