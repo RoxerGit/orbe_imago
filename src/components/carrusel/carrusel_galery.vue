@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
 import { ref } from 'vue'
@@ -32,6 +32,7 @@ const thumbnailsConfig = {
   id: index + 1,
   url: `https://picsum.photos/seed/${Math.random()}/800/600`,
 }))*/
+
 const images = [
 	{ id: 1, url: carrusel1, textoImagen: "Texto carrusel 1" },
 	{ id: 2, url: carrusel2, textoImagen: "Texto carrusel 2" },

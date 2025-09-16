@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "element-plus": "^2.8.0",
+    "jenesius-vue-form": "^3.0.22",
     "jenesius-vue-modal": "^1.11.9",
     "jquery": "^3.7.1",
     "vue": "^3.4.29",
