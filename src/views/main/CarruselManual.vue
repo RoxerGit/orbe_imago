@@ -1,3 +1,52 @@
+<script setup>
+import { defineComponent, ref, computed } from 'vue'
+import { Carousel, Slide, Navigation } from 'vue3-carousel'
+import CarruselAutomaticoInterno from './CarruselAutomaticoInterno.vue'
+
+
+
+import 'vue3-carousel/dist/carousel.css'
+import button1 from '../../assets/4 Servicios/Recurso 10.png'
+import button2 from '../../assets/4 Servicios/Recurso 11.png'
+import button3 from '../../assets/4 Servicios/Recurso 12.png'
+import button4 from '../../assets/4 Servicios/Recurso 13.png'
+import button5 from '../../assets/4 Servicios/Recurso 14.png'
+import button6 from '../../assets/4 Servicios/Recurso 15.png'
+
+const buttons = [
+{id:1,image:button1, link:'https://www.youtube.com/embed/Xal3RTspi9Y'}, 
+{id:2,image:button2, link:'https://www.youtube.com/embed/JbBKMsftAYc'}, 
+{id:3,image:button3, link:'https://www.youtube.com/embed/sPpMkr8-Ako'}, 
+{id:4,image:button4, link:'https://www.youtube.com/embed/vtKu6_-0qjs'},
+{id:5,image:button5, link:'https://www.youtube.com/embed/vtKu6_-0qjs'},
+];
+
+let currentSlide = ref(0);
+   
+function slideTo(val) {
+	this.currentSlide = val
+}
+  
+let breakpointsManual= {
+	  300: {
+	        itemsToShow: 2,
+	        snapAlign: 'center',
+	      },
+      // 700px and up
+      700: {
+        itemsToShow: 3,
+        snapAlign: 'center',
+      },
+      // 1024 and up
+      1024: {
+        itemsToShow: 5,
+        snapAlign: 'start',
+      },
+    }
+	
+	  
+
+</script>
 
 <template>
 		<Carousel 
@@ -65,58 +114,7 @@
 
 </template>
 
-<script setup>
-import { defineComponent, ref, computed } from 'vue'
-import { Carousel, Slide, Navigation } from 'vue3-carousel'
-import CarruselAutomaticoInterno from './CarruselAutomaticoInterno.vue';
 
-
-
-
-
-
-import 'vue3-carousel/dist/carousel.css'
-import button1 from '../../assets/4 Servicios/Recurso 10.png'
-import button2 from '../../assets/4 Servicios/Recurso 11.png'
-import button3 from '../../assets/4 Servicios/Recurso 12.png'
-import button4 from '../../assets/4 Servicios/Recurso 13.png'
-import button5 from '../../assets/4 Servicios/Recurso 14.png'
-import button6 from '../../assets/4 Servicios/Recurso 15.png'
-
-const buttons = [
-{id:1,image:button1, link:'https://www.youtube.com/embed/Xal3RTspi9Y'}, 
-{id:2,image:button2, link:'https://www.youtube.com/embed/JbBKMsftAYc'}, 
-{id:3,image:button3, link:'https://www.youtube.com/embed/sPpMkr8-Ako'}, 
-{id:4,image:button4, link:'https://www.youtube.com/embed/vtKu6_-0qjs'},
-{id:5,image:button5, link:'https://www.youtube.com/embed/vtKu6_-0qjs'},
-];
-
-let currentSlide = ref(0);
-   
-function slideTo(val) {
-	this.currentSlide = val
-}
-  
-let breakpointsManual= {
-	  300: {
-	        itemsToShow: 2,
-	        snapAlign: 'center',
-	      },
-      // 700px and up
-      700: {
-        itemsToShow: 3,
-        snapAlign: 'center',
-      },
-      // 1024 and up
-      1024: {
-        itemsToShow: 5,
-        snapAlign: 'start',
-      },
-    }
-	
-	  
-
-</script>
 
 <style scoped>
 .el-row {
