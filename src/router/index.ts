@@ -1,11 +1,9 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Orbe from '@/views/Orbe.vue'
 import TestRouter from '@/views/main/TestRouter.vue'
 import Page from '@/views/main/Page.vue'
 
-const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
+const routes: Array<RouteRecordRaw> = [
 	{
       path: '/',
       name: 'orbe',
@@ -38,6 +36,10 @@ const router = createRouter({
     component: () => import('@/views/NotFound.vue')
   }
   ]
+  
+  const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes
 })
 
 export default router
