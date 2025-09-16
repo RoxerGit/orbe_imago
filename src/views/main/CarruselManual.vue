@@ -24,7 +24,7 @@ const buttons = [
 const currentSlide = ref(0);
    
 function slideTo(val) {
-	currentSlide = val
+	currentSlide.value = val
 }
   
 let breakpointsManual= {
@@ -58,7 +58,7 @@ let breakpointsManual= {
 		  ref="carousel"
 		>
 		  <Slide v-for="slide in buttons" :key="slide.id">
-		    <div class="carousel__item1" @click="slideTo(slide.id - 1)">
+		    <div class="carousel__item1" @click="slideTo(slide.id)">
 				<img :src="slide.image" class="image"/>
 			</div>
 		  </Slide>
