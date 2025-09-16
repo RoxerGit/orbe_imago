@@ -21,10 +21,10 @@ const buttons = [
 {id:5,image:button5, link:'https://www.youtube.com/embed/vtKu6_-0qjs'},
 ];
 
-let currentSlide = ref(0);
+constant currentSlide = ref(0);
    
 function slideTo(val) {
-	this.currentSlide = val
+	currentSlide = val
 }
   
 let breakpointsManual= {
