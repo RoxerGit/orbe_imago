@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Orbe from '../views/Orbe.vue'
-import TestRouter from '../views/main/TestRouter.vue'
-import Page from '../views/main/Page.vue'
+import Orbe from '@/views/Orbe.vue'
+import TestRouter from '@/views/main/TestRouter.vue'
+import Page from '@/views/main/Page.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -30,6 +30,13 @@ const router = createRouter({
 //      // which is lazy-loaded when the route is visited.
 //      component: () => import('../views/AboutView.vue')
 //    }
+,
+  // ⚠️ Ruta "catch-all" para manejar 404
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'not-found',
+    component: () => import('@/views/NotFound.vue')
+  }
   ]
 })
 
