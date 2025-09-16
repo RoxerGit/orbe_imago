@@ -23,7 +23,7 @@ const galleryConfig = {
 	mouseDrag: false,
 	touchDrag: false,
 	height: 200,
-	autoplay: 5000
+	autoplay: 4000
 }
 
 const thumbnailsConfig = {
@@ -34,18 +34,13 @@ const thumbnailsConfig = {
 	gap: 10,
 }
 
-/*const images = [
+const images = [
 	{ id: 1, url: carrusel1, textoImagen: "Texto carrusel 1" },
 	{ id: 2, url: carrusel2, textoImagen: "Texto carrusel 2" },
 	{ id: 3, url: carrusel3, textoImagen: "Texto carrusel 3" },
 	{ id: 4, url: carrusel4, textoImagen: "Texto carrusel 4" }
 	];
-*/
-const images = Array.from({ length: 10 }, (_, index) => ({
-  id: index + 1,
-  url: `https://picsum.photos/seed/${Math.random()}/800/600`,
-  textoImagen: "Texto carrusel"+index+1
-}))
+
 const showModal = ref(false)
 
 const zoomImage=ref('');
@@ -70,16 +65,8 @@ function cerrarModal() {
 				<div class="cube-scene">
 					<div class="cube spin-x">
 						<div class="face top">
-<!--							<img :src="image.url" alt="Gallery Image" />-->
-							<div class="header-texto text-center" 
-								style="background-color:gray; color:black; width:100%; height:100%;">
-								<br/><br/><br/>
-								<p>"La experiencia no se equivoca; sólo tus juicios se equivocan a esperar de ella lo que no está en su poder."</p>
-								<br> 
-									<p>— Leonardo Da Vinci.</p>
-								<br/> 
-								<p>INTELIGENCIA CREATIVA</p>
-							</div>
+							<img :src="image.url" alt="Gallery Image" />
+<!--						<p>texto</p>-->
 						</div>
 						<div class="face back">
 							<img :src="image.url" alt="" 
@@ -192,7 +179,7 @@ function cerrarModal() {
 	width: 100%;
 	height: 100%;
 	transform-style: preserve-3d;
-	transition: transform 5s ease;
+	transition: transform 4s ease;
 	position: relative;
 }
 
@@ -308,23 +295,20 @@ function cerrarModal() {
 
 
 
+.img-wrapper {
+  max-width: 90vw;   /* máximo 90% del ancho de la ventana */
+  max-height: 80vh;  /* máximo 80% del alto de la ventana */
+  overflow: auto;    /* aparece scroll si la imagen es más grande */
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Imagen dentro del contenedor */
 .img-wrapper-img {
   display: block;
   max-width: 100%;
   max-height: 100%;
-}
-
-
-header-texto{
-	font-family: "TENOR SANS";
-	font-size: 28px;
-	letter-spacing: .8rem;
-	text-align: center;
-	font-weight: bold;
-	
-	display:flex;
-	    justify-content: center;
-	    align-items: center;
 }
 </style>

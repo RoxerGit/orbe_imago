@@ -7,7 +7,7 @@
 				<el-col  :xs="24" :md="10">
 						<img src="../../assets/1 Header/Recurso 2.png" class="image"/>
 				</el-col>
-				<el-col  :xs="24" :md="14" class="texto1">
+				<el-col  :xs="24" :md="14" class="header-texto">
 						INTELIGENCIA CREATIVA
 				</el-col>
 			</el-row>
@@ -27,7 +27,7 @@
 	align-content: space-around;
 }
 
-.texto1{
+.header-texto{
 	font-family: "TENOR SANS";
 	font-size: 28px;
 	letter-spacing: .8rem;

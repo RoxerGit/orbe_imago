@@ -1,10 +1,6 @@
 <script setup lang="ts">
-import CarruselGallery from '../components/carrusel/carrusel_galery.vue';
-
-
-import Carrusel3d from '../components/carrusel/carrusel_3d.vue';
-
-
+import CarruselAutomatico from './main/CarruselAutomatico.vue';
+import CarruselManual from './main/CarruselManual.vue';
 
 function x(){
 	alert("xyz")
@@ -14,7 +10,6 @@ function x(){
 import { container as ModalContainer } from "jenesius-vue-modal"
 
 import {openModal} from "jenesius-vue-modal"
-
 import Modal from "../components/modals/modal-intro.vue";
 import {ref, onMounted, reactive} from "vue";
 
@@ -41,14 +36,14 @@ async function openModalVideo() {
 
 <template>
 	
-	<el-main>
-		<CarruselGallery/>
-	</el-main>
-	
-	<el-main>
-		<Carrusel3d/>
+	<el-main class="main">
+		<CarruselAutomatico/>
 	</el-main>
 
+	  
+	<el-main>
+		<CarruselManual/>
+	</el-main>
 	
 	<div class="seccion">
 		
@@ -60,10 +55,13 @@ async function openModalVideo() {
 
 	<modal-container :class="classObject"/>
 
-
 </template>
 
 <style scoped>
+
+
+
+
 .modal-container {
     align-items: flex-end;
     background-color: rgba(999, 999, 999, 0.90);
@@ -81,7 +79,7 @@ async function openModalVideo() {
 }
 
 
-.body{
+.main{
 	padding-top:20px ;
 	padding-left: 0px;
 	padding-right: 0px;

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Orbe from '../views/Orbe.vue'
-
+import TestRouter from '../views/main/TestRouter.vue'
+import Page from '../views/main/Page.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -9,7 +10,17 @@ const router = createRouter({
       path: '/',
       name: 'orbe',
       component: Orbe
-    }
+    },
+    {
+	  path: '/componentes',
+      name: 'componentes',
+      component: TestRouter
+	},	
+    {
+	  path: '/page',
+      name: 'Page',
+      component: Page
+	}
 //    ,
 //    {
 //      path: '/about',

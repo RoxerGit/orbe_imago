@@ -28,18 +28,10 @@ const thumbnailsConfig = {
   gap: 10,
 }
 
-/*const images = Array.from({ length: 10 }, (_, index) => ({
+const images = Array.from({ length: 10 }, (_, index) => ({
   id: index + 1,
   url: `https://picsum.photos/seed/${Math.random()}/800/600`,
-}))*/
-const images = [
-	{ id: 1, url: carrusel1, textoImagen: "Texto carrusel 1" },
-	{ id: 2, url: carrusel2, textoImagen: "Texto carrusel 2" },
-	{ id: 3, url: carrusel3, textoImagen: "Texto carrusel 3" },
-	{ id: 4, url: carrusel4, textoImagen: "Texto carrusel 4" }
-	];
-
-
+}))
 </script>
 
 <template>
