@@ -25,7 +25,7 @@ const showModal = ref(false)
 	
 	<BuscarImagenes/>
 		
-<!--	<BuscarComponentes/>-->
+	<BuscarComponentes/>
 		
 	<el-divider />
     <header style="padding:20px; background:#f3f4f6">
