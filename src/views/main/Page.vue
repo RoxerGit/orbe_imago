@@ -87,7 +87,7 @@ async function openModalVideo() {
 }
 
 .seccion {
-	background: url("../assets/recorte.png");
+	background: url("../../assets/recorte.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	height: 500px;
